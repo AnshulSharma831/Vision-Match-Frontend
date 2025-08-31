@@ -143,7 +143,7 @@ function UploadImg({ onUploadSuccess }) {
             }
             
             // FIXED: Corrected API endpoint URL with proper error handling
-            const response = await fetch('http://localhost:5000/api/upload', {
+            const response = await fetch('https://vision-match-backend-1.onrender.com/api/upload', {
                 method: 'POST',
                 body: formData,
                 // Don't set Content-Type header - let browser set it for FormData
